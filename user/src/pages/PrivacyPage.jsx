@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from "react";
-import Contact from "../components/common/Contact";
 import FooterDesktop from "../components/common/FooterDesktop";
 import FooterMobile from "../components/common/FooterMobile";
 import NavMenuDesktop from "../components/common/NavMenuDesktop";
 import NavMenuMobile from "../components/common/NavMenuMobile";
+import Privacy from "../components/others/Privacy";
 
-class ContactPage extends Component {
-    componentDidMount(){
-        window.scroll(0,0)
-   }
+class PrivacyPage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>
@@ -20,7 +20,7 @@ class ContactPage extends Component {
           <NavMenuMobile />
         </div>
 
-        <Contact />
+        <Privacy />
 
         <div className="Desktop">
           <FooterDesktop />
@@ -34,4 +34,4 @@ class ContactPage extends Component {
   }
 }
 
-export default ContactPage;
+export default PrivacyPage;
